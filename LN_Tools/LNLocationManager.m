@@ -9,6 +9,9 @@
 #import "LNLocationManager.h"
 #import "LNLocationConverter.h"
 
+
+#define ios_8 [UIDevice currentDevice].systemVersion.integerValue > 8.0
+
 @interface LNLocationManager ()
 
 {
@@ -83,8 +86,18 @@
     else
     {
         if (self.isShow) {
+#ifdef ios_8
+            
+          UIAlertController *alterView = [UIAlertController alertControllerWithTitle:@"" message:@"需要开启定位服务,请到设置->隐私,打开定位服务" preferredStyle:UIAlertControllerStyleAlert];
+            [self.vc presentViewController:alterView animated:YES completion:nil];
+
+#else
             UIAlertView *alterView =[[UIAlertView alloc]initWithTitle:@"" message:@"需要开启定位服务,请到设置->隐私,打开定位服务" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
             [alterView show];
+#endif
+        
+            
+
         }
         if (_locationErrorBlock) {
             _locationErrorBlock(nil);

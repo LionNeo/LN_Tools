@@ -24,6 +24,7 @@ typedef void (^LocationAddressDetailBlock)(NSString *Addressdetail);
 
 @interface LNLocationManager : NSObject <CLLocationManagerDelegate>
 
+@property(nonatomic,strong)UIViewController *vc;
 
 +(LNLocationManager *)shareLocation;
 /**

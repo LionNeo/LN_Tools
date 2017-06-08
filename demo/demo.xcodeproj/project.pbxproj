@@ -15,7 +15,6 @@
 		2EB89D521EE6480E00D5608E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB89D501EE6480E00D5608E /* LaunchScreen.storyboard */; };
 		2EB89D5D1EE6480E00D5608E /* demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D5C1EE6480E00D5608E /* demoTests.m */; };
 		2EB89D681EE6480E00D5608E /* demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D671EE6480E00D5608E /* demoUITests.m */; };
-		2EB89D871EE6482400D5608E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB89D771EE6482400D5608E /* Info.plist */; };
 		2EB89D881EE6482400D5608E /* LNKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D7A1EE6482400D5608E /* LNKeychainUtils.m */; };
 		2EB89D891EE6482400D5608E /* LNLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D7C1EE6482400D5608E /* LNLocationConverter.m */; };
 		2EB89D8A1EE6482400D5608E /* LNLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D7E1EE6482400D5608E /* LNLocationManager.m */; };
@@ -60,7 +59,6 @@
 		2EB89D671EE6480E00D5608E /* demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoUITests.m; sourceTree = "<group>"; };
 		2EB89D691EE6480E00D5608E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EB89D761EE6482400D5608E /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
-		2EB89D771EE6482400D5608E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EB89D781EE6482400D5608E /* LN_Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LN_Tools.h; sourceTree = "<group>"; };
 		2EB89D791EE6482400D5608E /* LNKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNKeychainUtils.h; sourceTree = "<group>"; };
 		2EB89D7A1EE6482400D5608E /* LNKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNKeychainUtils.m; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				2EB89D761EE6482400D5608E /* Color.h */,
-				2EB89D771EE6482400D5608E /* Info.plist */,
 				2EB89D781EE6482400D5608E /* LN_Tools.h */,
 				2EB89D791EE6482400D5608E /* LNKeychainUtils.h */,
 				2EB89D7A1EE6482400D5608E /* LNKeychainUtils.m */,
@@ -293,7 +290,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EB89D871EE6482400D5608E /* Info.plist in Resources */,
 				2EB89D521EE6480E00D5608E /* LaunchScreen.storyboard in Resources */,
 				2EB89D4F1EE6480E00D5608E /* Assets.xcassets in Resources */,
 				2EB89D4D1EE6480E00D5608E /* Main.storyboard in Resources */,
@@ -556,6 +552,7 @@
 				2EB89D6E1EE6480E00D5608E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EB89D6F1EE6480E00D5608E /* Build configuration list for PBXNativeTarget "demoTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +561,7 @@
 				2EB89D711EE6480E00D5608E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EB89D721EE6480E00D5608E /* Build configuration list for PBXNativeTarget "demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +570,7 @@
 				2EB89D741EE6480E00D5608E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
