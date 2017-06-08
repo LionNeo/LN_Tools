@@ -22,6 +22,7 @@
 		2EB89D8C1EE6482400D5608E /* UIView+FindeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D821EE6482400D5608E /* UIView+FindeController.m */; };
 		2EB89D8D1EE6482400D5608E /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D841EE6482400D5608E /* UIView+frame.m */; };
 		2EB89D8E1EE6482400D5608E /* UIView+GetPixelColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D861EE6482400D5608E /* UIView+GetPixelColor.m */; };
+		2EFBFED21EE9570600CE5A4F /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBFED11EE9570600CE5A4F /* UIImage+Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		2EB89D841EE6482400D5608E /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		2EB89D851EE6482400D5608E /* UIView+GetPixelColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GetPixelColor.h"; sourceTree = "<group>"; };
 		2EB89D861EE6482400D5608E /* UIView+GetPixelColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetPixelColor.m"; sourceTree = "<group>"; };
+		2EFBFED01EE9570600CE5A4F /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		2EFBFED11EE9570600CE5A4F /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,8 @@
 				2EB89D841EE6482400D5608E /* UIView+frame.m */,
 				2EB89D851EE6482400D5608E /* UIView+GetPixelColor.h */,
 				2EB89D861EE6482400D5608E /* UIView+GetPixelColor.m */,
+				2EFBFED01EE9570600CE5A4F /* UIImage+Image.h */,
+				2EFBFED11EE9570600CE5A4F /* UIImage+Image.m */,
 			);
 			path = LN_Tools;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				2EB89D891EE6482400D5608E /* LNLocationConverter.m in Sources */,
 				2EB89D8E1EE6482400D5608E /* UIView+GetPixelColor.m in Sources */,
 				2EB89D8B1EE6482400D5608E /* UIButton+ImageTitle.m in Sources */,
+				2EFBFED21EE9570600CE5A4F /* UIImage+Image.m in Sources */,
 				2EB89D441EE6480E00D5608E /* main.m in Sources */,
 				2EB89D881EE6482400D5608E /* LNKeychainUtils.m in Sources */,
 			);
