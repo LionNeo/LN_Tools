@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = 'A tools is good for develop on iOS'
@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'LN_Tools/*.{h,m}'
   s.framework    = 'CoreLocation'
-  s.resources    = 'LN_Tools/LN_Tools.bundle'
   s.requires_arc = true
 end
