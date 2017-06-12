@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E9F95451EEE6BC0003F808F /* LN_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9F95441EEE6BC0003F808F /* LN_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F954C1EEE6BC0003F808F /* LN_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F95421EEE6BC0003F808F /* LN_Tools.framework */; };
+		2E9F95531EEE6BC0003F808F /* LN_ToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F95521EEE6BC0003F808F /* LN_ToolsTests.m */; };
+		2E9F95571EEE6BC0003F808F /* LN_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F95421EEE6BC0003F808F /* LN_Tools.framework */; };
+		2E9F95581EEE6BC0003F808F /* LN_Tools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F95421EEE6BC0003F808F /* LN_Tools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E9F95611EEE6C2E003F808F /* LNKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB89D791EE6482400D5608E /* LNKeychainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F95621EEE6C2E003F808F /* LNLocationConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB89D7B1EE6482400D5608E /* LNLocationConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F95631EEE6C2E003F808F /* LNLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB89D7D1EE6482400D5608E /* LNLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F95641EEE6C2E003F808F /* UIButton+ImageTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB89D7F1EE6482400D5608E /* UIButton+ImageTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F95651EEE6C2E003F808F /* UIView+FindeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB89D811EE6482400D5608E /* UIView+FindeController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F95661EEE6C2E003F808F /* UIView+frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB89D831EE6482400D5608E /* UIView+frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F95671EEE6C2E003F808F /* UIView+GetPixelColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB89D851EE6482400D5608E /* UIView+GetPixelColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F95681EEE6C2E003F808F /* UIImage+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EFBFED01EE9570600CE5A4F /* UIImage+Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9F956A1EEE6C4D003F808F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F95691EEE6C4D003F808F /* CoreLocation.framework */; };
+		2E9F956B1EEE6CC5003F808F /* LNKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D7A1EE6482400D5608E /* LNKeychainUtils.m */; };
+		2E9F956C1EEE6CC5003F808F /* LNLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D7C1EE6482400D5608E /* LNLocationConverter.m */; };
+		2E9F956D1EEE6CC5003F808F /* LNLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D7E1EE6482400D5608E /* LNLocationManager.m */; };
+		2E9F956E1EEE6CC5003F808F /* UIButton+ImageTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D801EE6482400D5608E /* UIButton+ImageTitle.m */; };
+		2E9F956F1EEE6CC5003F808F /* UIView+FindeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D821EE6482400D5608E /* UIView+FindeController.m */; };
+		2E9F95701EEE6CC5003F808F /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D841EE6482400D5608E /* UIView+frame.m */; };
+		2E9F95711EEE6CC5003F808F /* UIView+GetPixelColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D861EE6482400D5608E /* UIView+GetPixelColor.m */; };
+		2E9F95721EEE6CC5003F808F /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBFED11EE9570600CE5A4F /* UIImage+Image.m */; };
+		2E9F95BF1EEE71AB003F808F /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB89D761EE6482400D5608E /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EB89D441EE6480E00D5608E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D431EE6480E00D5608E /* main.m */; };
 		2EB89D471EE6480E00D5608E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D461EE6480E00D5608E /* AppDelegate.m */; };
 		2EB89D4A1EE6480E00D5608E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D491EE6480E00D5608E /* ViewController.m */; };
@@ -22,10 +45,34 @@
 		2EB89D8C1EE6482400D5608E /* UIView+FindeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D821EE6482400D5608E /* UIView+FindeController.m */; };
 		2EB89D8D1EE6482400D5608E /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D841EE6482400D5608E /* UIView+frame.m */; };
 		2EB89D8E1EE6482400D5608E /* UIView+GetPixelColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB89D861EE6482400D5608E /* UIView+GetPixelColor.m */; };
+		2ED65A141EEE73320027F6D8 /* NSString+LNStaticString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED65A131EEE73320027F6D8 /* NSString+LNStaticString.m */; };
+		2ED65A151EEE73420027F6D8 /* NSString+LNStaticString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED65A131EEE73320027F6D8 /* NSString+LNStaticString.m */; };
+		2ED65A161EEE73450027F6D8 /* NSString+LNStaticString.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ED65A121EEE73320027F6D8 /* NSString+LNStaticString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EFBFED21EE9570600CE5A4F /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBFED11EE9570600CE5A4F /* UIImage+Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2E9F954D1EEE6BC0003F808F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EB89D371EE6480D00D5608E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E9F95411EEE6BC0003F808F;
+			remoteInfo = LN_Tools;
+		};
+		2E9F954F1EEE6BC0003F808F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EB89D371EE6480D00D5608E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EB89D3E1EE6480E00D5608E;
+			remoteInfo = demo;
+		};
+		2E9F95551EEE6BC0003F808F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EB89D371EE6480D00D5608E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E9F95411EEE6BC0003F808F;
+			remoteInfo = LN_Tools;
+		};
 		2EB89D591EE6480E00D5608E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2EB89D371EE6480D00D5608E /* Project object */;
@@ -42,7 +89,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2E9F955E1EEE6BC0003F808F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E9F95581EEE6BC0003F808F /* LN_Tools.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2E9F95421EEE6BC0003F808F /* LN_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LN_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9F95441EEE6BC0003F808F /* LN_Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LN_Tools.h; sourceTree = "<group>"; };
+		2E9F95461EEE6BC0003F808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E9F954B1EEE6BC0003F808F /* LN_ToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LN_ToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9F95521EEE6BC0003F808F /* LN_ToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LN_ToolsTests.m; sourceTree = "<group>"; };
+		2E9F95541EEE6BC0003F808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E9F95691EEE6C4D003F808F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2EB89D3F1EE6480E00D5608E /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB89D431EE6480E00D5608E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EB89D451EE6480E00D5608E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,15 +143,34 @@
 		2EB89D841EE6482400D5608E /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		2EB89D851EE6482400D5608E /* UIView+GetPixelColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GetPixelColor.h"; sourceTree = "<group>"; };
 		2EB89D861EE6482400D5608E /* UIView+GetPixelColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetPixelColor.m"; sourceTree = "<group>"; };
+		2ED65A121EEE73320027F6D8 /* NSString+LNStaticString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LNStaticString.h"; sourceTree = "<group>"; };
+		2ED65A131EEE73320027F6D8 /* NSString+LNStaticString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LNStaticString.m"; sourceTree = "<group>"; };
 		2EFBFED01EE9570600CE5A4F /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		2EFBFED11EE9570600CE5A4F /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2E9F953E1EEE6BC0003F808F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9F956A1EEE6C4D003F808F /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9F95481EEE6BC0003F808F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9F954C1EEE6BC0003F808F /* LN_Tools.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EB89D3C1EE6480E00D5608E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9F95571EEE6BC0003F808F /* LN_Tools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +191,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E9F95431EEE6BC0003F808F /* LN_Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F95441EEE6BC0003F808F /* LN_Tools.h */,
+				2E9F95461EEE6BC0003F808F /* Info.plist */,
+			);
+			path = LN_Tools;
+			sourceTree = "<group>";
+		};
+		2E9F95511EEE6BC0003F808F /* LN_ToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F95521EEE6BC0003F808F /* LN_ToolsTests.m */,
+				2E9F95541EEE6BC0003F808F /* Info.plist */,
+			);
+			path = LN_ToolsTests;
+			sourceTree = "<group>";
+		};
 		2EB89D361EE6480D00D5608E = {
 			isa = PBXGroup;
 			children = (
+				2E9F95691EEE6C4D003F808F /* CoreLocation.framework */,
 				2EB89D411EE6480E00D5608E /* demo */,
 				2EB89D5B1EE6480E00D5608E /* demoTests */,
 				2EB89D661EE6480E00D5608E /* demoUITests */,
+				2E9F95431EEE6BC0003F808F /* LN_Tools */,
+				2E9F95511EEE6BC0003F808F /* LN_ToolsTests */,
 				2EB89D401EE6480E00D5608E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +228,8 @@
 				2EB89D3F1EE6480E00D5608E /* demo.app */,
 				2EB89D581EE6480E00D5608E /* demoTests.xctest */,
 				2EB89D631EE6480E00D5608E /* demoUITests.xctest */,
+				2E9F95421EEE6BC0003F808F /* LN_Tools.framework */,
+				2E9F954B1EEE6BC0003F808F /* LN_ToolsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +280,8 @@
 		2EB89D751EE6482400D5608E /* LN_Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2ED65A121EEE73320027F6D8 /* NSString+LNStaticString.h */,
+				2ED65A131EEE73320027F6D8 /* NSString+LNStaticString.m */,
 				2EB89D761EE6482400D5608E /* Color.h */,
 				2EB89D781EE6482400D5608E /* LN_Tools.h */,
 				2EB89D791EE6482400D5608E /* LNKeychainUtils.h */,
@@ -194,7 +306,65 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2E9F953F1EEE6BC0003F808F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9F95451EEE6BC0003F808F /* LN_Tools.h in Headers */,
+				2E9F95611EEE6C2E003F808F /* LNKeychainUtils.h in Headers */,
+				2E9F95621EEE6C2E003F808F /* LNLocationConverter.h in Headers */,
+				2E9F95631EEE6C2E003F808F /* LNLocationManager.h in Headers */,
+				2E9F95641EEE6C2E003F808F /* UIButton+ImageTitle.h in Headers */,
+				2E9F95651EEE6C2E003F808F /* UIView+FindeController.h in Headers */,
+				2E9F95661EEE6C2E003F808F /* UIView+frame.h in Headers */,
+				2E9F95671EEE6C2E003F808F /* UIView+GetPixelColor.h in Headers */,
+				2E9F95681EEE6C2E003F808F /* UIImage+Image.h in Headers */,
+				2E9F95BF1EEE71AB003F808F /* Color.h in Headers */,
+				2ED65A161EEE73450027F6D8 /* NSString+LNStaticString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2E9F95411EEE6BC0003F808F /* LN_Tools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9F955D1EEE6BC0003F808F /* Build configuration list for PBXNativeTarget "LN_Tools" */;
+			buildPhases = (
+				2E9F953D1EEE6BC0003F808F /* Sources */,
+				2E9F953E1EEE6BC0003F808F /* Frameworks */,
+				2E9F953F1EEE6BC0003F808F /* Headers */,
+				2E9F95401EEE6BC0003F808F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LN_Tools;
+			productName = LN_Tools;
+			productReference = 2E9F95421EEE6BC0003F808F /* LN_Tools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2E9F954A1EEE6BC0003F808F /* LN_ToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9F955F1EEE6BC0003F808F /* Build configuration list for PBXNativeTarget "LN_ToolsTests" */;
+			buildPhases = (
+				2E9F95471EEE6BC0003F808F /* Sources */,
+				2E9F95481EEE6BC0003F808F /* Frameworks */,
+				2E9F95491EEE6BC0003F808F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E9F954E1EEE6BC0003F808F /* PBXTargetDependency */,
+				2E9F95501EEE6BC0003F808F /* PBXTargetDependency */,
+			);
+			name = LN_ToolsTests;
+			productName = LN_ToolsTests;
+			productReference = 2E9F954B1EEE6BC0003F808F /* LN_ToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2EB89D3E1EE6480E00D5608E /* demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EB89D6C1EE6480E00D5608E /* Build configuration list for PBXNativeTarget "demo" */;
@@ -202,10 +372,12 @@
 				2EB89D3B1EE6480E00D5608E /* Sources */,
 				2EB89D3C1EE6480E00D5608E /* Frameworks */,
 				2EB89D3D1EE6480E00D5608E /* Resources */,
+				2E9F955E1EEE6BC0003F808F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2E9F95561EEE6BC0003F808F /* PBXTargetDependency */,
 			);
 			name = demo;
 			productName = demo;
@@ -257,6 +429,14 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = com.LionNeo.www;
 				TargetAttributes = {
+					2E9F95411EEE6BC0003F808F = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 63239K73J8;
+					};
+					2E9F954A1EEE6BC0003F808F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2EB89D3E1EE6480E00D5608E;
+					};
 					2EB89D3E1EE6480E00D5608E = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -286,11 +466,27 @@
 				2EB89D3E1EE6480E00D5608E /* demo */,
 				2EB89D571EE6480E00D5608E /* demoTests */,
 				2EB89D621EE6480E00D5608E /* demoUITests */,
+				2E9F95411EEE6BC0003F808F /* LN_Tools */,
+				2E9F954A1EEE6BC0003F808F /* LN_ToolsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2E9F95401EEE6BC0003F808F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9F95491EEE6BC0003F808F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EB89D3D1EE6480E00D5608E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +514,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2E9F953D1EEE6BC0003F808F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED65A151EEE73420027F6D8 /* NSString+LNStaticString.m in Sources */,
+				2E9F956B1EEE6CC5003F808F /* LNKeychainUtils.m in Sources */,
+				2E9F956C1EEE6CC5003F808F /* LNLocationConverter.m in Sources */,
+				2E9F956D1EEE6CC5003F808F /* LNLocationManager.m in Sources */,
+				2E9F956E1EEE6CC5003F808F /* UIButton+ImageTitle.m in Sources */,
+				2E9F956F1EEE6CC5003F808F /* UIView+FindeController.m in Sources */,
+				2E9F95701EEE6CC5003F808F /* UIView+frame.m in Sources */,
+				2E9F95711EEE6CC5003F808F /* UIView+GetPixelColor.m in Sources */,
+				2E9F95721EEE6CC5003F808F /* UIImage+Image.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9F95471EEE6BC0003F808F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9F95531EEE6BC0003F808F /* LN_ToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EB89D3B1EE6480E00D5608E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +550,7 @@
 				2EB89D891EE6482400D5608E /* LNLocationConverter.m in Sources */,
 				2EB89D8E1EE6482400D5608E /* UIView+GetPixelColor.m in Sources */,
 				2EB89D8B1EE6482400D5608E /* UIButton+ImageTitle.m in Sources */,
+				2ED65A141EEE73320027F6D8 /* NSString+LNStaticString.m in Sources */,
 				2EFBFED21EE9570600CE5A4F /* UIImage+Image.m in Sources */,
 				2EB89D441EE6480E00D5608E /* main.m in Sources */,
 				2EB89D881EE6482400D5608E /* LNKeychainUtils.m in Sources */,
@@ -355,6 +576,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2E9F954E1EEE6BC0003F808F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E9F95411EEE6BC0003F808F /* LN_Tools */;
+			targetProxy = 2E9F954D1EEE6BC0003F808F /* PBXContainerItemProxy */;
+		};
+		2E9F95501EEE6BC0003F808F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EB89D3E1EE6480E00D5608E /* demo */;
+			targetProxy = 2E9F954F1EEE6BC0003F808F /* PBXContainerItemProxy */;
+		};
+		2E9F95561EEE6BC0003F808F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E9F95411EEE6BC0003F808F /* LN_Tools */;
+			targetProxy = 2E9F95551EEE6BC0003F808F /* PBXContainerItemProxy */;
+		};
 		2EB89D5A1EE6480E00D5608E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2EB89D3E1EE6480E00D5608E /* demo */;
@@ -387,6 +623,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2E9F95591EEE6BC0003F808F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LN_Tools/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.www.LN-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E9F955A1EEE6BC0003F808F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LN_Tools/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.www.LN-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E9F955B1EEE6BC0003F808F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LN_ToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.www.LN-ToolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo.app/demo";
+			};
+			name = Debug;
+		};
+		2E9F955C1EEE6BC0003F808F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LN_ToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.www.LN-ToolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo.app/demo";
+			};
+			name = Release;
+		};
 		2EB89D6A1EE6480E00D5608E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -542,6 +848,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2E9F955D1EEE6BC0003F808F /* Build configuration list for PBXNativeTarget "LN_Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9F95591EEE6BC0003F808F /* Debug */,
+				2E9F955A1EEE6BC0003F808F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E9F955F1EEE6BC0003F808F /* Build configuration list for PBXNativeTarget "LN_ToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9F955B1EEE6BC0003F808F /* Debug */,
+				2E9F955C1EEE6BC0003F808F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2EB89D3A1EE6480D00D5608E /* Build configuration list for PBXProject "demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
