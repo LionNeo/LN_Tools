@@ -12,6 +12,36 @@
 #import <CoreText/CoreText.h>
 
 @implementation NSString (LNStaticString)
+/**
+ *  字符串为空
+ *
+ *  @param string 字符串
+ *
+ *  @return yes or no
+ */
+BOOL LNIsNullString(NSString *string) {
+    
+    if (string == nil || string == NULL) {
+        
+        return YES;
+        
+    }
+    
+    if ([string isKindOfClass:[NSNull class]]) {
+        
+        return YES;
+        
+    }
+    
+    if ([[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
+        
+        return YES;
+        
+    }
+    
+    return NO;
+    
+}
 
 #pragma mark - 验证合法性
 /**
@@ -179,7 +209,7 @@ BOOL LNValidatePIN(NSString *identification){
 
 /**
  判断是否在地区码内
- 
+
  @param code 地区码
  @return 是否在地区码内
  */
@@ -271,7 +301,7 @@ BOOL areaCode(NSString *code)
 
 /**
  获取指定范围内的字符串
- 
+
  @param str 原字符串
  @param range 截取范围
  @return 截取后的字符串

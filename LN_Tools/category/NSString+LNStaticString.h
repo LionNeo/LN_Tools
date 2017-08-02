@@ -1,4 +1,4 @@
-//
+ //
 //  NSString+LNStaticString.h
 //  LNne_Rebuild
 //
@@ -11,7 +11,13 @@
 
 @interface NSString (LNStaticString)
 
-#pragma mark - 验证合法性
+
+/**
+ *  判断字符串为空
+ *
+ */
+BOOL LNIsNullString(NSString *string);
+
 /**
  验证邮箱
 

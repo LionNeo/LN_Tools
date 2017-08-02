@@ -7,7 +7,10 @@
 //
 
 #import "NSObject+Swizzling.h"
-
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <YYKit/NSObject+YYModel.h>
+#import "NSString+LNStaticString.h"
+#import <OpenGLES/ES1/gl.h>
 #ifdef DEBUG
 /**
  打印不带时间的log
@@ -93,7 +96,7 @@ BOOL LNCheckFloat(NSString *number){
     PLog(@"=============================  打印开始  =============================");
     double start = CFAbsoluteTimeGetCurrent();
     if ([objc isKindOfClass:[NSString class]]) {
-    const char *className = [objc cStringUsingEncoding:NSASCIIStringEncoding];
+        const char *className = [objc cStringUsingEncoding:NSASCIIStringEncoding];
         objc  = objc_getClass(className);
     }
     
@@ -102,7 +105,7 @@ BOOL LNCheckFloat(NSString *number){
     
     
     for (i = 0; i<outCount; i++)
-        
+    
     {
         
         objc_property_t property = properties[i];
@@ -126,11 +129,11 @@ BOOL LNCheckFloat(NSString *number){
             propertyValue = @"值为空";
         }
         PLog(@"key:%@ ---> value:%@;",propertyName,propertyValue);
-//        PLog(@"@property(nonatomic,copy)NSString * %@;",propertyName);
+        //        PLog(@"@property(nonatomic,copy)NSString * %@;",propertyName);
     }
     
     double end = CFAbsoluteTimeGetCurrent();
-     PLog(@"=============================  打印结束 共用%.2f秒  =============================",(end - start));
+    PLog(@"=============================  打印结束 共用%.2f秒  =============================",(end - start));
     free(properties);
 }
 
@@ -141,57 +144,57 @@ BOOL LNCheckFloat(NSString *number){
     PLog(@"=============================  打印开始  =============================");
     RACSignal *signal1 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         
-//        数字（整数或浮点数）
-//        字符串（在双引号中）
-//        逻辑值（true 或 false）
-//        数组（在方括号中）
-//        对象（在花括号中）
-//        null
-
-                   [dic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-                       NSString *valueName = nil;
-                       if ([obj isKindOfClass:[NSString class]])  {
-
-                           valueName = @"@property(nonatomic,copy)NSString *";
-                       }else if ([obj isKindOfClass:[NSNumber class]]){
-                           
-                           if (LNCheckInt([NSString stringWithFormat:@"%@",obj])) {
-                               
-                              valueName = @"@property(nonatomic,copy)NSInteger";
-                           }else if (LNCheckFloat([NSString stringWithFormat:@"%@",obj])) {
-                               
-                               valueName = @"@property(nonatomic,copy)CGFloat";
-                           }                           
-                       }else if ([obj isKindOfClass:[NSArray class]]){
-                           
-                           valueName = @"@property(nonatomic,copy)NSArray *";
-                       }else if ([obj isKindOfClass:[NSDictionary class]]){
-                           
-                           valueName = @"@property(nonatomic,copy)NSDictionary *";
-                       }else if (LNIsNullString(obj)){
-                           
-                           valueName = @"@property (nonatomic, copy,nullable)NSString *";
-                       }if ([self judgeBoolType:obj]) {
-                           valueName = @"@property(nonatomic,assign)BOOL";
-                       }
-                       
-                        PLog(@"%@ %@;\n",valueName,key);
-                   }];
-                    [subscriber sendNext:@"=============================  属性名打印完成  ============================="];
-                    [subscriber sendCompleted];
-                    return nil;
-                }];
-   
+        //        数字（整数或浮点数）
+        //        字符串（在双引号中）
+        //        逻辑值（true 或 false）
+        //        数组（在方括号中）
+        //        对象（在花括号中）
+        //        null
+        
+        [dic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            NSString *valueName = nil;
+            if ([obj isKindOfClass:[NSString class]])  {
+                
+                valueName = @"@property(nonatomic,copy)NSString *";
+            }else if ([obj isKindOfClass:[NSNumber class]]){
+                
+                if (LNCheckInt([NSString stringWithFormat:@"%@",obj])) {
+                    
+                    valueName = @"@property(nonatomic,copy)NSInteger";
+                }else if (LNCheckFloat([NSString stringWithFormat:@"%@",obj])) {
+                    
+                    valueName = @"@property(nonatomic,copy)CGFloat";
+                }                           
+            }else if ([obj isKindOfClass:[NSArray class]]){
+                
+                valueName = @"@property(nonatomic,copy)NSArray *";
+            }else if ([obj isKindOfClass:[NSDictionary class]]){
+                
+                valueName = @"@property(nonatomic,copy)NSDictionary *";
+            }else if (LNIsNullString(obj)){
+                
+                valueName = @"@property (nonatomic, copy,nullable)NSString *";
+            }if ([self judgeBoolType:obj]) {
+                valueName = @"@property(nonatomic,assign)BOOL";
+            }
+            
+            PLog(@"%@ %@;\n",valueName,key);
+        }];
+        [subscriber sendNext:@"=============================  属性名打印完成  ============================="];
+        [subscriber sendCompleted];
+        return nil;
+    }];
+    
     RACSignal *signal2 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         
         [dic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-             PLog(@"@dynamic %@;\n",key);
+            PLog(@"@dynamic %@;\n",key);
             
         }];
         
-            [subscriber sendCompleted];
-                    return nil;
-        }];
+        [subscriber sendCompleted];
+        return nil;
+    }];
     
     RACSignal *signal3 = [signal1 concat: signal2];
     [signal3 subscribeNext:^(id  _Nullable x) {
@@ -208,7 +211,7 @@ BOOL LNCheckFloat(NSString *number){
 
 #pragma mark - =============================  私有方法  =============================
 + (BOOL)judgeBoolType:(id)objc{
-
+    
     if ([objc isKindOfClass:[NSString class]]) {
         objc = [(NSString *) objc lowercaseString];
         if ([objc containsString:@"false"] || [objc containsString:@"true"]) {

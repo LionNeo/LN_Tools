@@ -7,17 +7,17 @@
 //
 
 #import "NSObject+LNAspects.h"
-
+#import <objc/runtime.h>
 
 @implementation NSObject (LNAspects)
 
-+ (id<AspectToken>)LNAspect_hookSelector:(SEL)selector
-                           withOptions:(AspectOptions)options
-                            usingBlock:(id)block
-                                   error:(NSError **)error{
++ (void)LNAspect_hookSelector:(SEL)selector
+                  withOptions:(AspectOptions)options
+                   usingBlock:(id)block
+                        error:(NSError **)error{
     
     Class temp = objc_getMetaClass(NSStringFromClass([self class]).UTF8String);
-    return  [temp aspect_hookSelector:selector withOptions:options usingBlock:block error:error];
+    [temp aspect_hookSelector:selector withOptions:options usingBlock:block error:error];
     
 }
 @end

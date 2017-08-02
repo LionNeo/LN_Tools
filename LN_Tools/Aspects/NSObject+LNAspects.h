@@ -13,12 +13,12 @@
 
 /**
  aspects 实现了对类方法的拦截
-
+ 
  @param selector 只能是类方法名
  
  */
-+ (id<AspectToken>)LNAspect_hookSelector:(SEL)selector
-                             withOptions:(AspectOptions)options
-                              usingBlock:(id)block
-                                   error:(NSError **)error;
++ (void)LNAspect_hookSelector:(SEL)selector
+                  withOptions:(AspectOptions)options
+                   usingBlock:(id)block
+                        error:(NSError **)error;
 @end
