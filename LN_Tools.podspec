@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '1.0.5'
+  s.version  = '1.0.6'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = 'A tools is good for develop on iOS'
