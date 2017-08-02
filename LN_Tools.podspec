@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '1.0.4'
+  s.version  = '1.0.5'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = 'A tools is good for develop on iOS'
@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.source_files = 'LN_Tools/**/*.{h,m}'
   s.public_header_files = 'LN_Tools/**/*.{h}'
   s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore','CoreLocation'
-  s.dependency 'LN_Framework'
+  s.dependency 'YYKit', '~> 1.0.9'
+  s.ios.vendored_frameworks = 'LN_Framework/AFNetworking.framework','LN_Framework/BlocksKit.framework','LN_Framework/ReactiveObjC.framework','LN_Framework/Realm.framework'
   s.requires_arc = true
 end
