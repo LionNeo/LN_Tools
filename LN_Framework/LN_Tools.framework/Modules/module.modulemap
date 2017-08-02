@@ -1,6 +1,0 @@
-framework module LN_Tools {
-  umbrella header "LN_Tools.h"
-
-  export *
-  module * { export * }
-}
