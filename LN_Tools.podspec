@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'LN_Tools/**/*.{h}'
   s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore','CoreLocation'
   s.dependency 'YYKit', '~> 1.0.9'
-  s.ios.vendored_frameworks = 'LN_Framework/AFNetworking.framework','LN_Framework/BlocksKit.framework','LN_Framework/ReactiveObjC.framework','LN_Framework/Realm.framework'
+  s.ios.vendored_frameworks = 'LN_Framework/*.{framework}'
   s.requires_arc = true
 end
