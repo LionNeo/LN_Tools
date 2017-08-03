@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
-
-
+#import <UIKit/UIKit.h>
 #pragma mark - =============================  函数  =============================
 
 @interface NSObject (Swizzling)
@@ -25,7 +24,7 @@ UIKIT_EXTERN BOOL LNCheckFloat(NSString * number);
 #pragma mark - =============================  OC接口部分  =============================
 /**
  交换方法
-
+ 
  @param originalSelector 原方法
  @param swizzledSelector 新方法
  */
@@ -34,7 +33,7 @@ UIKIT_EXTERN BOOL LNCheckFloat(NSString * number);
 
 /**
  判断类中是否有这个属性
-
+ 
  @param property 属性名
  @return bool
  */
@@ -42,14 +41,14 @@ UIKIT_EXTERN BOOL LNCheckFloat(NSString * number);
 
 /**
  打印字典,主要是为了获取字典可以,省去创建属性时间
-
+ 
  @param dic 出入json或者字典
  */
 + (void)printfFromDictionary:(NSDictionary *)dic;
 
 /**
  获取对象的属性,可以传对象,类或者字符串(类名),类或者类型无法打印key对应的值
-
+ 
  @param objc 对象
  */
 + (void)printfAllPropertiesFrom:(id)objc;
@@ -61,7 +60,7 @@ UIKIT_EXTERN BOOL LNCheckFloat(NSString * number);
 
 /**
  用于模型的自我描述
-
+ 
  */
 - (NSString *)LNModelDescription;
 
