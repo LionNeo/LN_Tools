@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   end
    s.subspec 'Vender' do |root|
       root.source_files = 'LN_Tools/Vender/**/*.{h,m}'
-      root.public_header_files = 'LN_Tools/vendor/**/*.{h}'
+      root.public_header_files = 'LN_Tools/Vendor/**/*.{h}'
   end
    s.subspec 'Category' do |root|
       root.source_files = 'LN_Tools/Category/**/*.{h,m}'
