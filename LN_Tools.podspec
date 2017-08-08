@@ -9,8 +9,10 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/LionNeo/LN_Tools.git', :tag => s.version.to_s }
   s.description = 'LN_Tools is a tools about develop on iOS'
 
-  # s.source_files = 'LN_Tools/**/*.{h.m}'
-  # s.public_header_files = 'LN_Tools/LN_Tools.h'
+
+   s.public_header_files = 'LN_Tools/LN_Tools.h'
+   s.source_files = 'LN_Tools/LN_Tools.h'
+
 
   s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore'
   
