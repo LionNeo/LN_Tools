@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '3.0.2'
+  s.version  = '3.0.3'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
-  s.summary  = 'A tools is good for develop on iOS'
+  s.summary  = 'some tools is good for develop on iOS'
   s.homepage = 'https://github.com/LionNeo/LN_Tools.git'
   s.authors   = { 'Lion_Neo' => '123624331@qq.com'}
   s.source   = { :git => 'https://github.com/LionNeo/LN_Tools.git', :tag => s.version.to_s }
@@ -26,6 +26,10 @@ Pod::Spec.new do |s|
    s.subspec 'Vender' do |vv|
       vv.source_files = 'LN_Tools/Vender/**/*.{h,m}'
       vv.public_header_files = 'LN_Tools/Vender/**/*.{h}'
+  end
+  s.subspec 'Helper' do |vv|
+      vv.source_files = 'LN_Tools/Helper/**/*.{h,m}'
+      vv.public_header_files = 'LN_Tools/Helper/**/*.{h}'
   end
    s.subspec 'Category' do |cc|
       cc.source_files = 'LN_Tools/Category/**/*.{h,m}'
