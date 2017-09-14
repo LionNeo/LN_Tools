@@ -1,0 +1,22 @@
+//
+//  UIButton+expand.h
+//  LionNeo
+//
+//  Created by Lion•Neo on 2017/9/14.
+//  Copyright © 2017年 com.LionNeo.www. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIButton (expand)
+
+/**
+ *  点击区域扩大的按钮
+ *
+ *  @param title    按钮 title
+ *  @param image    按钮图片
+ *  @param selImage 按钮选中图片
+ *
+ */
++ (instancetype)exButtonWithTitle:(NSString *)title ImageName:(NSString *)image SelectImage:(NSString *)selImage;
+@end
