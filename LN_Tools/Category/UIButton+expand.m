@@ -44,7 +44,7 @@ static const char *isExpandAreaKey = "isExpandAreaKey";
  */
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
     
-    CGRect bounds = CGRectMake(0, 0, self.size.width, self.size.height);
+    CGRect bounds = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     //扩大原热区直径至26，可以暴露个接口，用来设置需要扩大的半径。
     
     CGFloat widthDelta = MAX(44.0 - bounds.size.width, 0);
