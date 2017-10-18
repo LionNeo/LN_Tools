@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+#define UserDefaults [LNUserDefaults standardUserDefaults]
+
+
 @interface LNUserDefaults : NSObject
 
 + (instancetype)standardUserDefaults;
