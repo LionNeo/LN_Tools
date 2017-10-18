@@ -29,6 +29,7 @@
 #import "UIView+GetPixelColor.h"
 #import "NSObject+LNAspects.h"
 #import "UIImage+ImageEffects.h"
+#import "UIImage+Image.h"
 #import "UIApplication+PushNotification.h"
 #import "UIView+GestureExtension.h"
 #import "NSObject+Swizzling.h"
