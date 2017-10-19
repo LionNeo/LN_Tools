@@ -1,15 +1,14 @@
 //
-//  UIButton+expand.h
-//  LionNeo
+//  expandButton.h
+//  neo
 //
-//  Created by Lion•Neo on 2017/9/14.
-//  Copyright © 2017年 com.LionNeo.www. All rights reserved.
+//  Created by Lion•Neo on 2017/10/19.
+//  Copyright © 2017年 Lion•Neo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIButton (expand)
-
+@interface ExpandButton : UIButton
 /**
  *  点击区域扩大的按钮
  *
