@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '4.0.0'
+  s.version  = '4.0.1'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = 'some tools is good for develop on iOS'
@@ -30,6 +30,10 @@ Pod::Spec.new do |s|
   s.subspec 'Helper' do |vv|
       vv.source_files = 'LN_Tools/Helper/**/*.{h,m}'
       vv.public_header_files = 'LN_Tools/Helper/**/*.{h}'
+  end
+  s.subspec 'LNLog' do |vv|
+      vv.source_files = 'LN_Tools/LNLog/**/*.{h,m}'
+
   end
    s.subspec 'Category' do |cc|
       cc.source_files = 'LN_Tools/Category/**/*.{h,m}'
