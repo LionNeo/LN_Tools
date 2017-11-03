@@ -209,7 +209,7 @@ BOOL LNValidatePIN(NSString *identification){
 
 /**
  判断是否在地区码内
-
+ 
  @param code 地区码
  @return 是否在地区码内
  */
@@ -301,7 +301,7 @@ BOOL areaCode(NSString *code)
 
 /**
  获取指定范围内的字符串
-
+ 
  @param str 原字符串
  @param range 截取范围
  @return 截取后的字符串
@@ -318,7 +318,7 @@ NSString * LNGetSubStringWithRange(NSString *str, NSRange range){
  @param mobileNum 手机号码
  @return 手机号码是否合法
  */
-BOOL LNValidateMobileNumber(NSString *mobileNum){
+BOOL LNValidateMobileNumber(NSString *mobile){
     
     if (mobile.length != 11)
     {
