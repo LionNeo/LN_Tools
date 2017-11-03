@@ -46,10 +46,10 @@ NSString * LNGetSubStringWithRange(NSString *str, NSRange range);
 /**
  验证手机号码是否合法
 
- @param mobileNum 手机号码
+ @param mobile 手机号码
  @return 手机号码是否合法
  */
-BOOL LNValidateMobileNumber(NSString *mobileNum);
+BOOL LNValidateMobileNumber(NSString *mobile);
 
 #pragma mark - 加密
 /**
