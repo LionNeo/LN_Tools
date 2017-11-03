@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '3.0.8'
+  s.version  = '4.0.0'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = 'some tools is good for develop on iOS'
   s.homepage = 'https://github.com/LionNeo/LN_Tools.git'
   s.authors   = { 'Lion_Neo' => '123624331@qq.com'}
   s.source   = { :git => 'https://github.com/LionNeo/LN_Tools.git', :tag => s.version.to_s }
-  s.description = 'LN_Tools is a tools about develop on iOS,更新添加了本地存储的分类'
+  s.description = '这一次更新了本地打印数组和字典无法显示中文的问题'
 
 
    s.public_header_files = 'LN_Tools/LN_Tools.h'
