@@ -27,7 +27,7 @@ typedef void(^buttonClickblock)(__kindof UIControl * _Nullable sender);
  *
  *  @return UIButton
  */
-+ (UIButton *_Nonnull)buttonWithTitle:(nullable NSString *)title ImageName:(nonnull NSString *)imageName selectImageName:(nonnull NSString *)selImageName target:(nullable id) target action:(nullable SEL)action positon:(CGPoint)origin __deprecated;
++ (UIButton *_Nonnull)buttonWithTitle:(nullable NSString *)title ImageName:(nonnull NSString *)imageName selectImageName:(nonnull NSString *)selImageName target:(nullable id) target action:(nullable SEL)action positon:(CGPoint)origin;
 /**
  *  创建一个只有文字的按钮
  *
