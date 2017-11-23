@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '4.1.0'
+  s.version  = '4.1.1'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = '此次更新:本地打印数组和字典无法显示中文的问题'
   s.homepage = 'https://github.com/LionNeo/LN_Tools.git'
   s.authors   = { 'Lion_Neo' => '123624331@qq.com'}
   s.source   = { :git => 'https://github.com/LionNeo/LN_Tools.git', :tag => s.version.to_s }
-  s.description = '这一次更新了本地打印数组和字典无法显示中文的问题'
+  s.description = '这一次更新修复了 LNLog类中NSObject分类的一个发送给nil导致程序崩溃的问题'
 
 
    s.public_header_files = 'LN_Tools/LN_Tools.h'

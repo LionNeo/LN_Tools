@@ -12,6 +12,9 @@
 
 
 @implementation NSObject (LNLog)
+
+
+#if DEBUG
 - (NSString *)description {
     NSMutableDictionary *debugInfos = [NSMutableDictionary dictionary];
     
@@ -35,14 +38,42 @@
         
         // object
         if ([typeEncoding rangeOfString:@"@"].location != NSNotFound) {
-            value =  ((id (*)(id, SEL))objc_msgSend)((id)self, NSSelectorFromString(propertyName));
+            @try {
+                value =  ((id (*)(id, SEL))objc_msgSend)((id)self, NSSelectorFromString(propertyName));
+            } @catch (NSException *exception) {
+                
+            } @finally {
+                
+            }
+            
         } else if ([typeEncoding rangeOfString:@"*"].location != NSNotFound) {
-            char *v = ((char * (*)(id, SEL))objc_msgSend)((id)self, NSSelectorFromString(propertyName));
-            value = [NSString stringWithUTF8String:v];
+            @try {
+                char *v = ((char * (*)(id, SEL))objc_msgSend)((id)self, NSSelectorFromString(propertyName));
+                value = [NSString stringWithUTF8String:v];
+            } @catch (NSException *exception) {
+                
+            } @finally {
+                
+            }
+            
         } else if ([typeEncoding rangeOfString:@"#"].location != NSNotFound) {
-            value = propertyName;
+            @try {
+                value = propertyName;
+            } @catch (NSException *exception) {
+                
+            } @finally {
+                
+            }
+            
         } else if ([typeEncoding rangeOfString:@"^"].location != NSNotFound) {
-            value = @"基本C指针";
+            @try {
+                value = @"基本C指针";
+            } @catch (NSException *exception) {
+                
+            } @finally {
+                
+            }
+            
         } else {
             @try {
                 value = [self valueForKey:propertyName];
@@ -55,15 +86,21 @@
         }
         
         value = value == nil ? @"<nil>" : value;
-        
-        [debugInfos setValue:value forKey:propertyName];
+        @try {
+             [debugInfos setValue:value forKey:propertyName];
+        } @catch (NSException *exception) {
+            
+        } @finally {
+            
+        }
+       
     }
     
     free(ivars);
     
     return debugInfos.description;
 }
-    
+
 - (NSString *)debugDescription {
     NSMutableDictionary *debugInfos = [NSMutableDictionary dictionary];
     
@@ -81,5 +118,5 @@
     
     return debugInfos.debugDescription;
 }
-
+#endif
 @end
