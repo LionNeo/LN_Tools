@@ -25,7 +25,7 @@
         
         const char *name = ivar_getName(ivar);
         NSString *ivarName = [NSString stringWithUTF8String:name];
-        NSLog(@"%@", ivarName);
+        //NSLog(@"%@", ivarName);
         
         NSString *propertyName = ivarName;
         if ([propertyName hasPrefix:@"_"]) {
@@ -87,13 +87,13 @@
         
         value = value == nil ? @"<nil>" : value;
         @try {
-             [debugInfos setValue:value forKey:propertyName];
+            [debugInfos setValue:value forKey:propertyName];
         } @catch (NSException *exception) {
             
         } @finally {
             
         }
-       
+        
     }
     
     free(ivars);
@@ -111,7 +111,7 @@
         
         const char *name = ivar_getName(ivar);
         NSString *ivarName = [NSString stringWithUTF8String:name];
-        NSLog(@"%@", ivarName);
+        //NSLog(@"%@", ivarName);
     }
     
     free(ivars);
