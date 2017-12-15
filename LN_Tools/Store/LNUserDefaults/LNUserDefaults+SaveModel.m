@@ -36,7 +36,10 @@
         
         id propertyValue = [model valueForKey:(NSString *)propertyName];
         
+         NSLog(@"%@",propertyName);
         
+        if (![self existProperty:propertyName]) continue;
+            
         if (propertyValue == nil && propertyValue == NULL) {
             
             
@@ -51,7 +54,7 @@
             //            [props setObject:propertyValue forKey:propertyName];
             
         }
-        
+    
         //        LNLog(@"@dynamic %@;",propertyName);
         
     }
@@ -90,5 +93,27 @@
 }
 - (void)cleanPropertyForKey:(NSString *)key{
     [self setValue:nil forKey:key];
+}
+#pragma mark - =============================  private method  =============================
+
+-(BOOL)existProperty:(NSString *)propertyStr {
+    BOOL flag = NO;
+    unsigned int outCount, i;
+    
+    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    
+    for (int i = 0; i < outCount; i++) {
+        
+        objc_property_t property = properties[i];
+        const char* char_f =property_getName(property);
+        NSString *propertyName = [NSString stringWithUTF8String:char_f];
+        
+        
+        if ([propertyName isEqualToString:propertyStr]){
+            flag = YES;
+        }
+        
+    }
+    return flag;
 }
 @end
