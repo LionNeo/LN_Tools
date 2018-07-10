@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '4.1.3'
+  s.version  = '4.1.4'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = '此次更新:本地打印数组和字典无法显示中文的问题'

@@ -108,10 +108,10 @@
 }
 
 
--(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
-{
+- (void)locationManager:(CLLocationManager *)manager
+     didUpdateLocations:(NSArray<CLLocation *> *)locations{
    
-    
+    CLLocation * newLocation = locations.lastObject;
     CLLocationCoordinate2D  coordinate =CLLocationCoordinate2DMake(newLocation.coordinate.latitude, newLocation.coordinate.longitude);
     
     //判断是否在中国
