@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '4.1.6'
+  s.version  = '4.1.7'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = '此次更新:本地打印数组和字典无法显示中文的问题'
@@ -11,17 +11,14 @@ Pod::Spec.new do |s|
 
 
    s.public_header_files = 'LN_Tools/LN_Tools.h'
-   s.source_files = 'LN_Tools/LN_Tools.h'
-
+   s.source_files = 'LN_Tools/**/*'
 
   s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore'
   
   # s.ios.vendored_frameworks = 'LN_Framework/*.{framework}'
   s.requires_arc = true
-  s.xcconfig: {
-    "ARCHS": "$(ARCHS_STANDARD)"
-  }
-  s.subspec 'Store' do |ss|
+  
+   s.subspec 'Store' do |ss|
       ss.source_files = 'LN_Tools/Store/**/*.{h,m}'
       ss.public_header_files = 'LN_Tools/Store/**/*.{h}'
   end
