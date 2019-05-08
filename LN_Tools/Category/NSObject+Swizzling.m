@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+Swizzling.h"
-#import <ReactiveObjC/ReactiveObjC.h>
+#import "ReactiveObjC/ReactiveObjC.h"
 #import <YYKit/NSObject+YYModel.h>
 #import "NSString+LNStaticString.h"
 #import <OpenGLES/ES1/gl.h>
