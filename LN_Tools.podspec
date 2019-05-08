@@ -1,19 +1,19 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_Tools'
-  s.version  = '4.1.7'
+  s.version  = '4.1.9'
   s.ios.deployment_target = '8.0'
   s.license  =  'MIT'
   s.summary  = '此次更新:本地打印数组和字典无法显示中文的问题'
   s.homepage = 'https://github.com/LionNeo/LN_Tools.git'
   s.authors   = { 'Lion_Neo' => '123624331@qq.com'}
   s.source   = { :git => 'https://github.com/LionNeo/LN_Tools.git', :tag => s.version.to_s }
-  s.description = '修复了log控制台打印信息问题'
+  s.description = '新添加falshtool'
 
 
    s.public_header_files = 'LN_Tools/LN_Tools.h'
    s.source_files = 'LN_Tools/**/*'
 
-  s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore'
+  s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore','AVFoundation'
   
   # s.ios.vendored_frameworks = 'LN_Framework/*.{framework}'
   s.requires_arc = true
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
   s.subspec 'Helper' do |vv|
       vv.source_files = 'LN_Tools/Helper/**/*.{h,m}'
       vv.public_header_files = 'LN_Tools/Helper/**/*.{h}'
+      vv.frameworks = 'AVFoundation'
   end
   s.subspec 'LNLog' do |vv|
       vv.source_files = 'LN_Tools/LNLog/**/*.{h,m}'
