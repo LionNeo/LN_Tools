@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore' 
   
-  # s.ios.vendored_frameworks = 'LN_Framework/*.{framework}'
+  s.ios.vendored_frameworks = 'LN_Framework/*.{framework}'
   s.requires_arc = true
   
    s.subspec 'Store' do |ss|
