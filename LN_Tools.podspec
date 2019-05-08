@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
    s.public_header_files = 'LN_Tools/LN_Tools.h'
    s.source_files = 'LN_Tools/**/*'
 
-  s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore'
+  s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore' 
   
   # s.ios.vendored_frameworks = 'LN_Framework/*.{framework}'
   s.requires_arc = true
