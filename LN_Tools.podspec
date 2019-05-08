@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
    s.subspec 'Category' do |cc|
       cc.source_files = 'LN_Tools/Category/**/*.{h,m}'
       cc.public_header_files = 'LN_Tools/Category/**/*.{h}'
-      # cc.dependency 'LN_Framework'
+      cc.dependency 'LN_Framework', '~> 1.1.0'
       cc.dependency 'YYKit', '~> 1.0.9'
       cc.frameworks =  'UIKit'
   end
