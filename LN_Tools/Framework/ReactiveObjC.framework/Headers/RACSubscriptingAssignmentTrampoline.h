@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ReactiveObjC/RACEXTKeyPathCoding.h>
+#import <ReactiveObjC/EXTKeyPathCoding.h>
 
 @class RACSignal<__covariant ValueType>;
 
