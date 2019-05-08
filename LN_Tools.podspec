@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'UIKit', 'CoreText', 'CoreGraphics', 'QuartzCore' 
   
-  s.ios.vendored_frameworks = 'LN_Framework/*.{framework}'
+  #s.ios.vendored_frameworks = 'LN_Framework/*.{framework}'
   s.requires_arc = true
   
    s.subspec 'Store' do |ss|
@@ -38,17 +38,17 @@ Pod::Spec.new do |s|
    s.subspec 'Category' do |cc|
       cc.source_files = 'LN_Tools/Category/**/*.{h,m}'
       cc.public_header_files = 'LN_Tools/Category/**/*.{h}'
-      cc.dependency 'LN_Tools/LN_Framework'
+      # cc.dependency 'LN_Framework'
       cc.dependency 'YYKit', '~> 1.0.9'
       cc.frameworks =  'UIKit'
   end
    s.subspec 'Color' do |color|
       color.source_files = 'LN_Tools/Color/**/*.{h,m}'
   end
-  // s.subspec 'LN_Framework' do |ff|
-  //     ff.ios.vendored_frameworks = 'LN_Tools/LN_Framework/ReactiveObjC.framework'
+  # s.subspec 'LN_Framework' do |ff|
+  #     ff.ios.vendored_frameworks = 'LN_Tools/LN_Framework/ReactiveObjC.framework'
 
-  // end
+  # end
  s.subspec 'Location' do |ll|
       ll.source_files = 'LN_Tools/Location/**/*.{h,m}'
       ll.public_header_files = 'LN_Tools/Location/**/*.{h}'
