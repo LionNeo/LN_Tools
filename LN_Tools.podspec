@@ -45,10 +45,10 @@ Pod::Spec.new do |s|
    s.subspec 'Color' do |color|
       color.source_files = 'LN_Tools/Color/**/*.{h,m}'
   end
-  s.subspec 'LN_Framework' do |ff|
-      ff.ios.vendored_frameworks = 'LN_Tools/LN_Framework/ReactiveObjC.framework'
+  // s.subspec 'LN_Framework' do |ff|
+  //     ff.ios.vendored_frameworks = 'LN_Tools/LN_Framework/ReactiveObjC.framework'
 
-  end
+  // end
  s.subspec 'Location' do |ll|
       ll.source_files = 'LN_Tools/Location/**/*.{h,m}'
       ll.public_header_files = 'LN_Tools/Location/**/*.{h}'
