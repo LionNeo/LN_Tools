@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
       cc.public_header_files = 'LN_Tools/Category/**/*.{h}'
 
       cc.dependency 'YYKit', '~> 1.0.9'
-      cc.frameworks =  'UIKit'
+
   end
    s.subspec 'Color' do |color|
       color.source_files = 'LN_Tools/Color/**.{h,m}'
